@@ -116,8 +116,15 @@
             </li>
           </ul>
   
-          <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
-        </div>
+          <script async
+          src="https://js.stripe.com/v3/buy-button.js">
+        </script>
+        
+        <stripe-buy-button
+          buy-button-id="buy_btn_1QeKGJHCHebZYPoV1yDVgCAI"
+          publishable-key="pk_test_51QeK0KHCHebZYPoVFjsIFVYOHiQFnnz5Ysb2TNxsLntA7sDiSyiYy1W0v2hjvDo6qjrab7edszSuuQaAJnn3J76B00YXzkdid1"
+        >
+        </stripe-buy-button>        </div>
       </div>
     </div>
     
