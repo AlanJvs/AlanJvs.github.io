@@ -21,6 +21,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
   </head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FCGPCVS96Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FCGPCVS96Q');
+</script>
   <body>
 
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -116,7 +125,7 @@
             </li>
           </ul>
   
-          <script async
+          <!-- <script async
           src="https://js.stripe.com/v3/buy-button.js">
         </script>
         
@@ -124,7 +133,16 @@
           buy-button-id="buy_btn_1QeKGJHCHebZYPoV1yDVgCAI"
           publishable-key="pk_test_51QeK0KHCHebZYPoVFjsIFVYOHiQFnnz5Ysb2TNxsLntA7sDiSyiYy1W0v2hjvDo6qjrab7edszSuuQaAJnn3J76B00YXzkdid1"
         >
-        </stripe-buy-button>        </div>
+        </stripe-buy-button> -->
+        
+                <script src="https://www.paypal.com/sdk/js?client-id=BAAktr8oUjK8hqIUi3rwkkkT9wb_q0QqdNuYENyHDPHiviJaOUYTU6xsv9A6eJWJmQVDD3_PfnAvIxsQXU&components=hosted-buttons&disable-funding=venmo&currency=MXN"></script>
+        <div id="paypal-container-EMTXTTLTWFCR8"></div>
+        <script>
+          paypal.HostedButtons({
+            hostedButtonId: "EMTXTTLTWFCR8",
+          }).render("#paypal-container-EMTXTTLTWFCR8")
+        </script>
+      </div>
       </div>
     </div>
     
