@@ -302,7 +302,10 @@
                   </ul>
                 
                 </div>
-
+                <input type="file" id="imageUpload" accept="image/*">
+                <img id="preview" src="" alt="Uploaded Image" style="max-width: 300px; display: none;">
+                <p id="prediction"></p>
+                
               </div>
           </div>
         </div>
@@ -2535,9 +2538,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="js/plugins.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+    <script src="js/modelo.js"></script>
     <!--Use the below code snippet to provide real time updates to the live chat plugin without the need of copying and paste each time to your website when changes are made via PBX-->
 <call-us-selector phonesystem-url="https://1185.3cx.cloud" party="alanmhm"></call-us-selector>
- 
 <!--Incase you don't want real time updates to the live chat plugin when options are changed, use the below code snippet. Please note that each time you change the settings you will need to copy and paste the snippet code to your website--> 
 <!--<call-us 
 phonesystem-url="https://1185.3cx.cloud" 
